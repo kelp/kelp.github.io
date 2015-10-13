@@ -3,6 +3,8 @@ layout: post
 title: San Francisco 2015 Inititive Voters Guide
 ---
 
+WIP
+
 For San Francisco residents voting in the fall 2015 election here is how I suggest you vote on the upcoming inititives. Please do vote, this election has
 several important inititives that could set the cities future direction
 on housing policy if passed.
