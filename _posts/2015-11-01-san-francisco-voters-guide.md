@@ -16,7 +16,7 @@ I generally agree
 with the [SPUR Voter Guide](http://www.spur.org/sites/default/files/publications_pdfs/SPUR_Voter_Guide_November_2015.pdf) 
 on most points. Please refer to it if you need more in-depth analysis than I'm providing below.  
 
-My general opinion on propositions is one should default to voting No unless there is a very compelling need. Initiatives
+My general opinion on propositions is one should default to voting No unless there is a very compelling need. Propsitions
 are very difficult to undo, and aren't always well written or well considered. In the worst cases, they leave us with
 a decades long legacy of problems. See the never ending debate on Prop 13.
 
