@@ -32,7 +32,7 @@ of income levels in this city over the long term, we need more subsidized housin
 
 ## Yes on B: Paid Parental Leave for City Employees
 While I don't personally have the same passion for this issue as I do for housing issues, I do think it's the right
-thing to do. My [employer](https://squareup.com/) already does this. I think the city should too. Vote Yes.
+thing to do. My employer already does this. I think the city should too. Vote Yes.
 
 ## No on C: Expenditure Lobbyists
 I certainly think we need to find ways to limit the money influence on politics, just look at what is happening
