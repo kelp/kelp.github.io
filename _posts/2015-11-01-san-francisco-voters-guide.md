@@ -61,7 +61,7 @@ between strict rent control, strong tenant protections, combined with a insuffic
 supply, making short term rentals worth the extra trouble. I believe there is also a significant population who
 can only afford to stay in this city by renting out an extra room, or staying with friends part time. I've hosted
 more than one friend for a weekend while they rented out their apartment on AirBnB so they could make rent in a 
-touch month.
+tough month.
 
 That said, AirBnB and similar short term rental's are probably making the cost of rents higher in San Francisco, 
 but I don't think this legislation is the right way to fix it.
