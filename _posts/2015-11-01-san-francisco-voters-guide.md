@@ -30,29 +30,38 @@ This is a bond to raise $310 million for subsidized housing in San Francisco. Gi
 housing in San Francisco](http://www.spur.org/publications/article/2014-02-11/real-costs-building-housing) you 
 can easily do some napkin math to discover this is a drop in the bucket, and realize there is no amount of realistic
 government spending that will get us out of this problem with subsidized housing. That said, to maintain a diversity
-of income levels in this city over the long term, we need more subsidized housing. As it is [we lose it nearly as quickly as we build it.](http://www.bizjournals.com/sanfrancisco/blog/real-estate/2015/07/sf-affordable-housing-preservation-housing-report.html) I recommend you vote Yes on this proposition.
+of income levels in this city over the long term, we need more subsidized housing. As it is [we lose it nearly as quickly as we build it.](http://www.bizjournals.com/sanfrancisco/blog/real-estate/2015/07/sf-affordable-housing-preservation-housing-report.html) 
+
+*Vote Yes.*
 
 ## Yes on B: Paid Parental Leave for City Employees
 While I don't personally have the same passion for this issue as I do for housing issues, I do think it's the right
-thing to do. My employer already does this. I think the city should too. Vote Yes.
+thing to do. My employer already does this. I think the city should too. 
+
+*Vote Yes.*
 
 ## No on C: Expenditure Lobbyists
 I certainly think we need to find ways to limit the money influence on politics, just look at what is happening
 in the race for District 3 Supervisor. Roughly [$200 per vote](http://www.sfchronicle.com/politics/article/Special-interests-digging-deep-in-6594262.php) is being spent! That said, I'm not convinced this legislation is the right
-thing to do. I believe it would make the job of great organizations like [SPUR](http://www.spur.org) more difficult, 
-so I recommend voting No.
+thing to do. I believe it would make the job of great organizations like [SPUR](http://www.spur.org) more difficult.
+
+*Vote No.*
 
 ## Yes on D: Mission Rock
 I'm upset that this is even a thing we vote on in San Francisco, I think this should be up to the planning 
 commission to decide, but thanks to [Proposition B](http://ballotpedia.org/City_of_San_Francisco_Voter_Approval_of_Waterfront_Construction_Exceeding_Height_Limits_Initiative,_Proposition_B_(June_2014)) 
 approved by voters in the June 2014 election, that's where we are. This project provides significant new housing,
 building an entire new neighborhood, brings in many construction jobs, and be 40% affordable housing. It might block
-some people's views of the bay. Please vote Yes.
+some people's views of the bay.
+
+*Vote Yes.*
 
 ## No on E: Public Meetings
 I don't have very strong opinions on this one, but it generally seems like a burden on local government without
 providing additional resources to shoulder that burden. When was the last time you had a worthwhile debate
-online? Is that what we need to bring to local politics, that are already very contentious? Lets vote No.
+online? Is that what we need to bring to local politics, that are already very contentious?
+
+*Vote No.*
 
 ## No on F: Short-Term Residential Rentals 
 This is essentially doubling down on the local trend of trying to control
@@ -66,17 +75,23 @@ tough month.
 That said, AirBnB and similar short term rental's are probably making the cost of rents higher in San Francisco, 
 but I don't think this legislation is the right way to fix it.
 This [Medium post](https://medium.com/@emeyerson/prop-f-is-worse-than-you-think-17e395ca8761#.i878uv88u) gets
-to the core of the issue better than I could. Vote No.`
+to the core of the issue better than I could. 
+
+*Vote No.*
 
 ## No on G: Restrictions for CleanPowerSF
 This pair of propositions is incredibly confusing, and good example of what is wrong with our proposition process.
 G and H essentially cancel each other out, but of the two, G is worse. This proposition essentially sets
 up rules for what can be called "green energy" and makes the rules different for CleanPowerSF than
 they would be for PG&E. The original organization that put this on the ballot has now rescinded their support
-and is supporting H which they negotiated with the Board of Supervisors. Vote No.
+and is supporting H which they negotiated with the Board of Supervisors. 
+
+*Vote No.*
 
 ## No on H: Defining Renewable Energy
-This is the counter to G, neither should be on the ballot. Vote No.
+This is the counter to G, neither should be on the ballot. 
+
+*Vote No.*
 
 ## No on I: Mission Moratorium
 Simply terrible policy. Preventing new housing in the mission will do the opposite of what this 
@@ -94,7 +109,7 @@ SUPRs guide lays it out very clearly:
 The real agenda behind this proposition is to create an opportunity for the city to buy a few sites in the Mission to
 build affordable housing. While the intention there is good, there must be a better way.
 
-Vote No.
+*Vote No.*
 
 ## No on J: Legacy Business Preservation Fund
 I'm often saddened to see a well loved business have to shut down due to rent increases, and I'm certainly worried
@@ -105,13 +120,15 @@ But as this proposition is written, it ties subsides to a politician's endorseme
 Additionally, it seems it may create an incentive for property owners to increase rents in anticipation of their
 tenants subsidies.
 
-Vote No.
+*Vote No.*
 
 ## Yes on K: Surplus Public Lands
 This is a generally well considered proposition written by four members of the Board of Supervisors, prioritizing public
 lands for use as subsidized housing. We need more housing any way we can get it, and this helps. The down side, as
 with all propositions, is it will be hard to change in the future. This doesn't need to be on the ballot, but since
-we need housing so badly, I recommend a Yes vote.
+we need housing so badly.
+
+*Vote Yes.*
 
 ## Julie Christensen for D3 Supervisor
 If you're in district 3, vote for Julie Christensen for Supervisor. As I write this at 
@@ -134,4 +151,4 @@ Peksin wins, the balance shifts to the Progressives, who have a record of preven
 rate housing (which comes with requirements to build affordable housing, or contribute to the city fund) and backing
 things like the Mission Moratorium.
 
-Vote Julie Christensen for D3 Supervisor.
+*Vote Julie Christensen for D3 Supervisor.*
