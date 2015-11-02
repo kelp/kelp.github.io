@@ -5,7 +5,7 @@ title: San Francisco Fall 2015 Voters Guide
 
 For San Francisco residents voting in the fall 2015 election I've outlined how I suggest you vote.
 This is a very important election for the city, with several important propositions that could set the cities 
-future direction on housing policy. Initiatives A, D, F, I, J and K are all related to the same 
+future direction on housing policy. Propositions A, D, F, I, J and K are all related to the same 
 fundamental issue, which at it's core is simple, but it's causes are complex and nuanced. The fundamental issue is
 lack of supply of housing and commercial real estate in a very desirable city.
 
