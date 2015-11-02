@@ -1,5 +1,7 @@
 ---
 layout: post
+category: blog
+date: 2015-11-01
 title: San Francisco Fall 2015 Voters Guide
 ---
 
