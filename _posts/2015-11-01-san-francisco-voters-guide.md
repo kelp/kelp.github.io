@@ -124,7 +124,7 @@ his policies will actually improve affordability for many. He has a history of f
 certainly helps property values increase, but it doesn't help make a more affordable city.
 
 
-[The Chronical](http://www.sfchronicle.com/opinion/editorials/article/Chronicle-recommends-Julie-Christensen-for-6544232.php) does a solid job of laying out the case for Julie Christiensen, and talks about some of their differences and [Peskin's history](http://www.sfchronicle.com/bayarea/article/Peskin-vs-City-Hall-What-s-different-since-6179308.php).
+[The Chronicle](http://www.sfchronicle.com/opinion/editorials/article/Chronicle-recommends-Julie-Christensen-for-6544232.php) does a solid job of laying out the case for Julie Christiensen, and talks about some of their differences and [Peskin's history](http://www.sfchronicle.com/bayarea/article/Peskin-vs-City-Hall-What-s-different-since-6179308.php).
 
 I believe Christiansen generally has a balanced and practical view, backing plans to build additional housing, and 
 improve transit in the city. 
