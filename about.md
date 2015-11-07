@@ -12,7 +12,7 @@ spare time I lift weights, run, and attend the ocassional
 [PCA](https://www.pca.org) event.
 
 
-Besides work in technology, you'll strong opinions about local politics, 
+Besides technology, you'll find strong opinions about local politics, 
 especially those about housing, and transportation.
 
 ### Contact me
