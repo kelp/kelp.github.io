@@ -8,7 +8,7 @@ title: San Francisco Fall 2015 Voters Guide
 For San Francisco residents voting in the fall 2015 election I've outlined how I suggest you vote.
 This is a very important election for the city, with several important propositions that could set the cities 
 future direction on housing policy. Propositions A, D, F, I, J and K are all related to the same 
-fundamental issue, which at it's core is simple, but it's causes are complex and nuanced. The fundamental issue is
+fundamental issue, which at its core is simple, but its causes are complex and nuanced. The fundamental issue is
 lack of supply of housing and commercial real estate in a very desirable city.
 
 For those interested in understanding how we got here, [What's the Matter With San Francisco](http://www.citylab.com/housing/2015/07/whats-the-matter-with-san-francisco/399506/) is a good place to start. Additionally, [Kim-Mai Cutler's](http://techcrunch.com/author/kim-mai-cutler/) epic [SF Housing](http://techcrunch.com/2014/04/14/sf-housing/) article
