@@ -8,7 +8,7 @@ wanted a place we could actually talk about why were doing this, where
 everyone could hear. Also, we will provide the drinks. It is on a
 Thursday, so it wont be that crazy.
 
-TL;DR Come to the party and talk about housing and maybe donate some
+**TL;DR** Come to the party and talk about housing and maybe donate some
 money. If you cant make it to the party, you can also just 
 [donate money](http://www.sfyimby.org/contribute).
 If you're wealthy and want to donate larger sums of money, but want a
