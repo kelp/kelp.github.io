@@ -128,7 +128,7 @@ elswhere soon. But it costs money to organize. They have an office now, paid
 staffers who organize hundreds of volunteers, and legal fees. They even have 
 [schwag](https://secure.actblue.com/contribute/page/theyimbystore) now.
 
-Volunteers will be canvasing for
+Volunteers will be canvassing for
 the upcoming election, which is highly effective in getting votes. Local
 elections are often won by just a few hundred votes, sometimes even
 less! YIMBY Party ([CaRLA](http://www.carlaef.org/)) is having some success with filing lawsuits
