@@ -130,7 +130,17 @@ down zoning compliant housing projects.
 
 None of these people are getting rich off this. Trust me, the way to get 
 rich in this town is to have bought real-estate 30 years ago, or found 
-a successful company.  Community organizing and local politics are not it.  
+a successful company.  Community organizing and local politics are not it.
+
+I know this seems like a hard problem, and the high cost of living in
+the Bay Area seems like an inevitiablity, but it doesn't have to be that
+way! The Obama administration just [released a paper](http://www.latimes.com/opinion/opinion-la/la-ol-obama-housing-crisis-20160926-snap-story.html) arguing that restrictions on development cause these
+high costs.
+
+Just this week a group of us went to Brisbane to [argue for housing](http://www.sfexaminer.com/dispute-brisbane-baylands-development-will-bleed-next-year/)
+in a proposed development there. We outnumbered the NIMBYs trying
+to prevent the development! This can work, but we have to keep showing
+up to these things.
 
 Wow this turned out to be really long!  
 
