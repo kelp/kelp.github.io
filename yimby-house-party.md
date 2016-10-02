@@ -128,7 +128,9 @@ a successful company.  Community organizing and local politics are not it.
 
 Wow this turned out to be really long!  
 
-If youre interested, let me know, Ill get you on the
-invite, and we can talk housing or just catch up.  
+If youre interested, let me know, I'll get you on the
+invite, and we can talk housing or just catch up. Some of the YIMBY Party 
+founders will be there, so you'll get to hear about this stuff right from the
+source.
 
 Thanks for reading!
