@@ -15,8 +15,6 @@ Dues paying member of the EFF, ACLU, Sierra Club and SF Bike Coaltion.
 Besides technology, you'll find strong opinions about local politics, 
 especially those about housing, and transportation.
 
-Edit
-
 ### Contact me
 
 [kelp@plek.org](mailto:kelp@plek.org)
