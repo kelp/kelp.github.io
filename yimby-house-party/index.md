@@ -7,7 +7,7 @@ permalink: /yimby-house-party/
 Friends,
 
 On Thursday October 13th, I'll be hosting a fundraiser for the [YIMBY
-Party](http://www.sfyimby.org/) at my apartment. I'm not much of the type to host parties, or
+Party](http://www.sfyimby.org/) at my apartment in San Francisco. I'm not much of the type to host parties, or
 really even go to house parties, but I care deploy about the issues the
 YIMBY Party is hitting head on. We almost hosted this at a bar, but I
 wanted a place we could actually talk about why were doing this, where
