@@ -1,3 +1,9 @@
+---
+layout: page
+title: YIMBY House Party
+permalink: /yimby-house-party/
+---
+
 Friends,
 
 On Thursday October 13th, I'll be hosting a fundraiser for the [YIMBY
