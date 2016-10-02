@@ -135,7 +135,8 @@ less! YIMBY Party ([CaRLA](http://www.carlaef.org/)) is having some success with
 against cities that violate the Housing Accountability Act by turning
 down zoning compliant housing projects.  
 
-None of these people are getting rich off this. Trust me, the way to get 
+No one behind the YIMBY party is getting rich off this (they are sometimes accused
+of being developer shills). Trust me, the way to get 
 rich in this town is to have bought real-estate 30 years ago, or found 
 a successful company.  Community organizing and local politics are not it.
 
