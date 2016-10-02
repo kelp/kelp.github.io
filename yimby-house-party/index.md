@@ -62,15 +62,15 @@ I care for several reasons. I rent in San Francisco, and I don't have
 rent control. I make enough money that its probably fine right now, but
 if you look at historical rent increases, they've been around 6.5% year
 over year for 40 years! That's an 11 year doubling time and well above
-inflation and well above most peoples income increases. I have friend
+inflation and well above most peoples income increases. I have friends
 who are teachers, psychologists, hell, nearly anyone other than tech
 workers, who really can't afford to live in San Francisco, and the
 problem is spreading outward.  Look at prices in Oakland lately. 
 
 I lived in Seattle for 9 years, and had 9 different addresses. I liked
 living in lots of different parts of the city, and it was super easy to
-just go look at another one and move right in. Ive lived in San
-Francisco for 7 years at the same address. Id have moved years ago if
+just go look at another one and move right in. I've lived in San
+Francisco for 7 years at the same address. I'd have moved years ago if
 finding a place wasnt such a huge pain, and also likely a rent increase.
 
 I want to see the San Francisco Bay Area take its place as a true world
@@ -89,11 +89,11 @@ some of the reasons I care. Even if youre a renter and in a rent
 controlled apartment, now youre stuck, wouldn't it be nice to be able to
 move some day? Or at least not have to worry about an eviction?  
 
-Maybe you own your own home, so youre good. Do you have friends who dont?
+Maybe you own your own home, so you're good. Do you have friends who don't?
 Coworkers? Do you ever want to move into another place? Will you be able
 to afford that?  
 
-Maybe youre so rich that you'll never have to worry
+Maybe you're so rich that you'll never have to worry
 about this. Do you have employees? Do they have long commutes, and come
 to work less rested and productive because of it? Do you have a hard
 time convincing talented people to move to the Bay Area because of
@@ -101,12 +101,12 @@ housing costs?
 
 Do you care about income inequality? Several [researchers](http://economix.blogs.nytimes.com/2012/10/17/housing-prices-and-income-inequality/)
 have suggested its partially due to the high cost of housing. Lower
-income people cant afford to migrate to places with higher income jobs.
+income people can't afford to migrate to places with higher income jobs.
 Instead they actually migrate away. This keeps the lower income places
 low, and increases the cost of labor in high income places.  
 
 A few other things to quickly note. While this is most acute in San
-Francisco and the Bay Area, its a problem in LA, its a problem in most
+Francisco and the Bay Area, its a problem in LA, it's a problem in most
 California Costal cites, but also we see similar issues in NYC, and
 really many American cities. I've been fortunate enough to travel
 quite a lot over the past few years and I've seen this isn't even a US
