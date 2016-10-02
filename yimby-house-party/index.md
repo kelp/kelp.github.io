@@ -38,7 +38,7 @@ at one and immediately met [Laura](http://www.growsanfrancisco.org/) and [Sonja]
 We had supervisor and judge candidates come and pitch us on why we
 should endorse them. Backers and detractors of propositions on the
 November ballot. We voted on endorsements and the YIMBY Party produced
-this awesome [slate card](https://twitter.com/SFyimby/status/776135589267595264).
+this awesome [slate card](http://www.sfyimby.org/endorsements-nov-2016/).
 
 Sonja talked me into doing a crazy thing with the Sierra Club, and I'll
 tell you about it if you come to the party.
