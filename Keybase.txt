@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/kelp
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://plek.org
+  * I am kelp (https://keybase.io/kelp) on keybase.
+  * I have a public key ASC89iGtcYmhfrd3cH3JSwYGBybeNGlEIi7cAbMXkMGBCgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012026e6bed1686b57563cb245455879d619093e34466f76200a8152c09288a51ed90a",
+      "host": "keybase.io",
+      "kid": "0120bcf621ad7189a17eb777707dc94b06060726de346944222edc01b31790c1810a0a",
+      "uid": "280f8bb8c43d532f389ef0e2a5321219",
+      "username": "kelp"
+    },
+    "merkle_root": {
+      "ctime": 1520542477,
+      "hash": "67df214513d5c90c6100983dc75af06f7413f7576ac47be04704908c004d219d00d7f2eb5a65db9dfd4c172b77b19ebbf05a70c4e5a57c933129f6161bf36124",
+      "hash_meta": "af3965923510cc9ae124473bebca0a7612228fe2ffe00447fa6c9f29f365382e",
+      "seqno": 2205471
+    },
+    "service": {
+      "hostname": "plek.org",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.45"
+  },
+  "ctime": 1520542492,
+  "expire_in": 504576000,
+  "prev": "bce16a80d65178f708c6fea142fe6bb823776f2d80adcd730fdf5668046807ee",
+  "seqno": 10,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgvPYhrXGJoX63d3B9yUsGBgcm3jRpRCIu3AGzF5DBgQoKp3BheWxvYWTFAzx7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMjZlNmJlZDE2ODZiNTc1NjNjYjI0NTQ1NTg3OWQ2MTkwOTNlMzQ0NjZmNzYyMDBhODE1MmMwOTI4OGE1MWVkOTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwYmNmNjIxYWQ3MTg5YTE3ZWI3Nzc3MDdkYzk0YjA2MDYwNzI2ZGUzNDY5NDQyMjJlZGMwMWIzMTc5MGMxODEwYTBhIiwidWlkIjoiMjgwZjhiYjhjNDNkNTMyZjM4OWVmMGUyYTUzMjEyMTkiLCJ1c2VybmFtZSI6ImtlbHAifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE1MjA1NDI0NzcsImhhc2giOiI2N2RmMjE0NTEzZDVjOTBjNjEwMDk4M2RjNzVhZjA2Zjc0MTNmNzU3NmFjNDdiZTA0NzA0OTA4YzAwNGQyMTlkMDBkN2YyZWI1YTY1ZGI5ZGZkNGMxNzJiNzdiMTllYmJmMDVhNzBjNGU1YTU3YzkzMzEyOWY2MTYxYmYzNjEyNCIsImhhc2hfbWV0YSI6ImFmMzk2NTkyMzUxMGNjOWFlMTI0NDczYmViY2EwYTc2MTIyMjhmZTJmZmUwMDQ0N2ZhNmM5ZjI5ZjM2NTM4MmUiLCJzZXFubyI6MjIwNTQ3MX0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJwbGVrLm9yZyIsInByb3RvY29sIjoiaHR0cDoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuNDUifSwiY3RpbWUiOjE1MjA1NDI0OTIsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJwcmV2IjoiYmNlMTZhODBkNjUxNzhmNzA4YzZmZWExNDJmZTZiYjgyMzc3NmYyZDgwYWRjZDczMGZkZjU2NjgwNDY4MDdlZSIsInNlcW5vIjoxMCwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEC/CY758uHEshPoxt+MYEBw7pJeirHKjNdWOGi4DkTrKCkRm8t9jOY6xXWMmc8sH+hr/Urgn2aqyfO1zoCSxtgGqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgrKjOymmLVzqJKs/tkn3EUuceJm+nTuAqUF1X/QCynGyjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kelp
+
+==================================================================
