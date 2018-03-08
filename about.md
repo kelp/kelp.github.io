@@ -4,13 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Right now, an Engineering Manager in San Francisco.  Building 
+Formerly a Senior Engineering Manager at Square in San Francisco.  I built 
 teams and infrastructure for the networks, datacenters, servers and 
-offices that support all of [Square](https://squareup.com/). In my 
-spare time I lift weights, run, and try to get out in nature, up and
-down the coast, and recently started snowbarding again, after a 15 year break.
+offices that supported all of [Square](https://squareup.com/). 
 
-Dues paying member of the EFF, ACLU, Sierra Club and SF Bike Coaltion.
+Since then I've been taking some time off to to get out in nature, up and
+down the coast, and a whole lot of snowboarding.
+
+I also try to stay up on San Francisco politics, especially those related to housing production.
 
 Besides technology, you'll find strong opinions about local politics, 
 especially those about housing, and transportation.
