@@ -1,4 +1,4 @@
-# Books I've read that had an impact
+Some of the most impactful books I've read in recent years.
 
 * [Why Nations Fail](https://amzn.to/2GNJLV4) by Daron Acemoglu and 
 James Robinson. The authors explain a fairly simple theory for why 
