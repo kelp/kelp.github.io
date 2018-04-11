@@ -11,7 +11,7 @@ compelling for getting through books that had been long on my list, but
 were hard to get through. I doubt I would have finished several on this
 list if not for Audible.
 
-These are presented in no particular order.
+These are presented in no particular order:
 
 * [_Why Nations Fail_](https://amzn.to/2GNJLV4) by Daron Acemoglu and James Robinson.
 
