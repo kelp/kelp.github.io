@@ -1,3 +1,8 @@
+---
+layout: page
+title: Books
+permalink: /books/
+---
 # Some of the most impactful books I've read in recent years
 
 I read a lot of these books over the past few years, but I really started
