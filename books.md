@@ -11,6 +11,8 @@ compelling for getting through books that had been long on my list, but
 were hard to get through. I doubt I would have finished several on this
 list if not for Audible.
 
+These are presented in no particular order.
+
 * [Why Nations Fail](https://amzn.to/2GNJLV4) by Daron Acemoglu and James Robinson.
 
 The authors explain a relatively simple theory for why
@@ -66,7 +68,7 @@ The author and his team identified and then interviewed the executives at
 some companies that went from good businesses to great businesses, and
 attempted to tease out what made them different.
 
-* [What Got You Here Won't Get You There](https://amzn.to/2JCDJEr) Marshall Goldsmith
+* [What Got You Here Won't Get You There](https://amzn.to/2JCDJEr) by Marshall Goldsmith
 
 The author is an executive coach and walks through clear examples of behaviors
 that successful people often have that are holding them back from career
@@ -76,12 +78,12 @@ were successful. But you may, in fact, have been successful in spite of that
 behavior. This book makes you look hard at your behavior, and it will
 also open your eyes to actions of others that are not serving them well.
 
-* [Zen and the Art of Motorcycle Maintenance](https://amzn.to/2GRCwr0) Robert Pirsig
+* [Zen and the Art of Motorcycle Maintenance](https://amzn.to/2GRCwr0) by Robert Pirsig
 
 This is simply a work of genius. The discussions of philosophy and quality are
 wonderful.
 
-* [A Guide to the Good Life](https://amzn.to/2Hc9B4A) William Irvine
+* [A Guide to the Good Life](https://amzn.to/2Hc9B4A) by William Irvine
 
 An introduction to Stoic philosophy, bringing it to a modern audience. This book
 prompted me to go on and read Marcus Aurelius and Epictetus. The main lesson
@@ -92,7 +94,7 @@ conscious time considering the worst case scenario. Then when something
 less bad plays out, you've already visualized a worse situation, so this
 negative one is less bad.
 
-* [Nonviolent Communication](https://amzn.to/2JzUeBf) Marshall Rosenberg
+* [Nonviolent Communication](https://amzn.to/2JzUeBf) by Marshall Rosenberg
 
 I had my reservations about this book, and it took me some time to actually
 sit down and read it. I was worried that it was too touchy-feely, and the
@@ -102,12 +104,12 @@ understanding what is truly bothering others, while also communicating your
 needs in away that people are more likely to be receptive to. I can't pretend
 that I've learned all the lessons, but these methods are something to aspire to.
 
-* [Deep Work](https://amzn.to/2Hnxh3n) Cal Newport
+* [Deep Work](https://amzn.to/2Hnxh3n) by Cal Newport
 
 An antidote to our always distracted world. A discussion of how to have greater
 impact by turning off distractions and doing real focused work.
 
-* [The Rational Optimist](https://amzn.to/2HrrtGb) Matt Ridley
+* [The Rational Optimist](https://amzn.to/2HrrtGb) by Matt Ridley
 
 The author makes the case that social and technological progress is actually
 making life much better for most of humanity. The objective numbers to show
@@ -119,7 +121,7 @@ human-caused climate change, but doubtful that it will have enough of a negative
 impact to be worth the economic drain of reducing fossil fuel use. All that
 aside, I've become more of a free trade capitalist, in part due to this book.
 
-* [The Power of Habit](https://amzn.to/2qqHLHs) Charles Duhigg
+* [The Power of Habit](https://amzn.to/2qqHLHs) by Charles Duhigg
 
 This book will teach you how habits are formed, how they work, and how you can
 create new positive habits, or break old harmful habits. It also introduces
@@ -127,7 +129,7 @@ the concept of keystone habit, one that will then lead to many other
 habits. Such as starting a running habit, later leads to improving your diet
 and becoming more health conscious.
 
-* [Drive](https://amzn.to/2HoJTY2) Daniel Pink
+* [Drive](https://amzn.to/2HoJTY2) by Daniel Pink
 
 Autonomy, Mastery, and Purpose. These are the three things necessary to be satisfied
 with your job or career. It also explains why financial bonuses aren't
@@ -135,7 +137,7 @@ effective motivators. They take an intrinsic motivation, such as doing excellent
 work for your customers, and turn it into an extrinsic motivation, making more
 money for yourself.
 
-* [When](https://amzn.to/2qlU6wk) Daniel Pink
+* [When](https://amzn.to/2qlU6wk) by Daniel Pink
 
 The importance of _when_ you do something. For example, our ability to perform
 cognitively demanding tasks changes through the day. For many people, the
@@ -149,7 +151,7 @@ work later in the day. You should probably let them if you want their best
 performance. I would roll into work around noon for most of my early
 20s. Now I normally get in by 9 or 9:30.
 
-* [How to Win Friends and Influence People](https://amzn.to/2Jz4sSi) Dale Carnegie
+* [How to Win Friends and Influence People](https://amzn.to/2Jz4sSi) by Dale Carnegie
 
 The classic that still holds up. It's written in a folksy way and some of the
 examples are fairly dated, but in general, lots of good stuff about being more
