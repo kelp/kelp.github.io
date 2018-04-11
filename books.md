@@ -36,7 +36,7 @@ These explained in detail, and once you've read this book, you'll see how
 widely it's author, and his late collaborator Amos Tversky, are referenced in
 the field.
 
-* [Mans Search for Meaning](https://amzn.to/2GMNulD) by Viktor Frankl
+* [Man's Search for Meaning](https://amzn.to/2GMNulD) by Viktor Frankl
 
 A discussion on finding meaning in life, even in the worst of situations.
 It helps to put things in perspective.
