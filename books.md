@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Books
+title: Some of the most impactful books I've read in recent years
 permalink: /books/
 ---
-
-# Some of the most impactful books I've read in recent years
 
 I read a lot of these books over the past few years, but I really started
 moving fast when I subscribed to [Audible.com](https://www.amazon.com/Audible-Free-Trial-Digital-Membership/dp/B00NB86OYE/?ref_=assoc_tag_ph_1485906643682&_encoding=UTF8&camp=1789&creative=9325&linkCode=pf4&tag=httpplekorg-20&linkId=2687b01ad25491ee76ffac66ac11c5dc)
