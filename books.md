@@ -8,7 +8,7 @@ I read a lot of these books over the past few years, but I really started
 moving fast when I subscribed to [Audible.com](https://www.amazon.com/Audible-Free-Trial-Digital-Membership/dp/B00NB86OYE/?ref_=assoc_tag_ph_1485906643682&_encoding=UTF8&camp=1789&creative=9325&linkCode=pf4&tag=httpplekorg-20&linkId=2687b01ad25491ee76ffac66ac11c5dc)
 and started listening to books on my walk to work. I found this especially
 compelling for getting through books that had been long on my list, but
-were hard to get through. I don't think I'd ever finished several on this
+were hard to get through. I doubt I would have finished several on this
 list if not for Audible.
 
 * [Why Nations Fail](https://amzn.to/2GNJLV4) by Daron Acemoglu and James Robinson.
