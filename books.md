@@ -52,7 +52,7 @@ and automatically increasing contributions as income increases. I think these
 can be applied to many areas. The core lesson is to be thoughtful about what
 behavior you want to encourage and make that the default and simplest option.
 
-* [Creativity Inc.](https://amzn.to/2v4V0Tt) by Ed Catmull
+* [Creativity, Inc.](https://amzn.to/2v4V0Tt) by Ed Catmull
 
 About as interesting and engaging as a management book can get. You're walked
 through the history of Pixar, and how they evolved their processes over time
