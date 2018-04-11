@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Some of the most impactful books I've read in recent years
+title: Impactful books I've read in recent years
 permalink: /books/
 ---
 
