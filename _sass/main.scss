@@ -1,0 +1,163 @@
+// Base styles
+html {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+// Layout
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+// Header
+.site-header {
+  border-bottom: 1px solid #e8e8e8;
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+
+.site-title {
+  font-size: 26px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #333;
+}
+
+.site-nav {
+  float: right;
+  margin-top: 5px;
+  
+  .page-link {
+    margin-left: 20px;
+    color: #666;
+    text-decoration: none;
+    
+    &:hover {
+      color: #333;
+    }
+  }
+}
+
+// Content
+.page-content {
+  padding: 20px 0 40px;
+}
+
+.page-heading {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+// Posts
+.post-list {
+  list-style: none;
+  padding: 0;
+  
+  li {
+    margin-bottom: 40px;
+  }
+}
+
+.post-meta {
+  font-size: 14px;
+  color: #828282;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.post-link {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  
+  &:hover {
+    color: #007bff;
+  }
+}
+
+// Footer
+.site-footer {
+  border-top: 1px solid #e8e8e8;
+  padding: 30px 0;
+  font-size: 14px;
+  color: #828282;
+  
+  a {
+    color: #666;
+    text-decoration: none;
+    
+    &:hover {
+      color: #333;
+    }
+  }
+}
+
+.footer-col-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.separator {
+  margin: 0 8px;
+}
+
+.svg-icon {
+  vertical-align: middle;
+  &:hover {
+    fill: #333;
+  }
+}
+
+// Post content
+.post-header {
+  margin-bottom: 30px;
+}
+
+.post-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.post-content {
+  h2 {
+    font-size: 28px;
+    margin-top: 30px;
+  }
+  
+  h3 {
+    font-size: 22px;
+    margin-top: 25px;
+  }
+  
+  p, ul, ol {
+    margin-bottom: 20px;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  code {
+    background-color: #f8f8f8;
+    padding: 2px 5px;
+    border-radius: 3px;
+  }
+  
+  pre {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 3px;
+    overflow-x: auto;
+  }
+}
