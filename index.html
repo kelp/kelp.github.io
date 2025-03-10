@@ -3,12 +3,18 @@ layout: default
 title: Home
 ---
 
-<div class="home">
+<div class="home" style="view-transition-name: filter-content">
   <h1 class="page-heading">Recent Posts</h1>
+  
+  <div class="category-filters">
+    <a href="/" class="filter-link active">All Posts</a>
+    <a href="/category/jekyll/" class="filter-link">Jekyll</a>
+    <a href="/category/html/" class="filter-link">HTML</a>
+  </div>
   
   <ul class="post-list">
     {% for post in site.posts limit:5 %}
-    <li>
+    <li style="view-transition-name: post-{{ post.id | slugify }}">
       <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
       <h2>
         <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>

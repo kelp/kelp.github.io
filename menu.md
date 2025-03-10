@@ -1,0 +1,15 @@
+---
+layout: default
+title: Menu
+permalink: /menu/
+---
+
+<div style="view-transition-name: menu-content">
+  <h1>Menu</h1>
+  <ul class="menu-list">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about/">About</a></li>
+    <li><a href="/archive/">Archive</a></li>
+  </ul>
+  <p><a href="javascript:history.back()" class="back-button">← Back</a></p>
+</div>
