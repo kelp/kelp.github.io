@@ -1,0 +1,51 @@
+name: Jekyll to Substack Cross-posting
+
+on:
+  push:
+    paths:
+      - '_posts/**'
+  workflow_dispatch:
+    inputs:
+      force_publish:
+        description: 'Force publish even if daily limit reached'
+        required: false
+        default: 'false'
+        type: boolean
+
+jobs:
+  cross-post:
+    runs-on: ubuntu-latest
+    name: Cross-post to Substack
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2  # To identify changes between commits
+      
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml markdown requests python-frontmatter
+      
+      - name: Find changed posts
+        id: changed_files
+        run: |
+          CHANGED_FILES=$(git diff --name-only HEAD^ HEAD | grep "^_posts/.*\.(md|markdown)$" || echo "")
+          echo "Changed files: $CHANGED_FILES"
+          echo "changed_posts=$CHANGED_FILES" >> $GITHUB_OUTPUT
+      
+      - name: Publish to Substack
+        if: ${{ steps.changed_files.outputs.changed_posts != '' }}
+        run: python .github/scripts/publish_to_substack.py
+        env:
+          SUBSTACK_API_KEY: ${{ secrets.SUBSTACK_API_KEY }}
+          SUBSTACK_PUBLICATION: ${{ secrets.SUBSTACK_PUBLICATION }}
+          CHANGED_POSTS: ${{ steps.changed_files.outputs.changed_posts }}
+          MAX_PUBLICATIONS_PER_DAY: ${{ secrets.MAX_PUBLICATIONS_PER_DAY || '1' }}
+          FORCE_PUBLISH: ${{ github.event.inputs.force_publish || 'false' }}

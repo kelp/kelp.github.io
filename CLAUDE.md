@@ -5,8 +5,17 @@
 - `bundle exec jekyll serve --livereload` - Run with live reloading
 
 # Testing
-- No formal test suite detected
+## Jekyll Site
 - Check locally with `bundle exec jekyll serve` before committing
+
+## Substack Cross-posting
+- `make test` - Run tests for Substack cross-posting
+- `make test-verbose` - Run tests with verbose output
+- `make test-cov` - Run tests with coverage reporting
+- `make test-html` - Run tests with HTML coverage report
+- `make setup-test` - Set up test environment
+- `make clean-test` - Remove test environment
+- `./.github/scripts/tests/run_tests.sh --help` - View all test script options
 
 # Style Guidelines
 - **Naming**: Use kebab-case for files, snake_case for variables
@@ -22,3 +31,12 @@
 
 # CI/CD
 - GitHub Actions workflow automatically deploys to GitHub Pages
+
+# Substack Cross-posting
+- The site has automated cross-posting to Substack
+- Posts in _posts/ can be published to Substack when pushed to the repository
+- Configure with `substack_status: 'draft'` or `'published'` in frontmatter
+- Set audience with `substack_audience: 'everyone'`, `'only_paid'`, or `'only_free'`
+- Skip cross-posting with `skip_substack: true`
+- Set a maximum of 1 post published per day (override with GitHub Secret `MAX_PUBLICATIONS_PER_DAY`)
+- Force publish using the GitHub Actions workflow dispatch with "Force publish" option

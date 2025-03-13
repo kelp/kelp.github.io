@@ -1,0 +1,6 @@
+pytest
+pytest-cov
+pyyaml
+markdown
+requests
+python-frontmatter
