@@ -1,9 +1,11 @@
-# tcole.net
+# kelp.github.io (tcole.net)
 
-[![Test Coverage: 99%](https://img.shields.io/badge/test%20coverage-99%25-brightgreen.svg)](https://github.com/kelp/tcole.net)
-[![Tests: Passing](https://img.shields.io/badge/tests-passing-brightgreen.svg)](https://github.com/kelp/tcole.net)
+[![Test Coverage: 99%](https://img.shields.io/badge/test%20coverage-99%25-brightgreen.svg)](https://github.com/kelp/kelp.github.io)
+[![Tests: Passing](https://img.shields.io/badge/tests-passing-brightgreen.svg)](https://github.com/kelp/kelp.github.io)
 [![Python: 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+> **IMPORTANT**: This repository must remain named `kelp.github.io` for GitHub Pages to function correctly with the custom domain. Renaming this repository will break the GitHub Pages configuration and custom domain setup.
 
 ## Jekyll to Substack Cross-posting
 

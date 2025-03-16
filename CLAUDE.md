@@ -31,6 +31,7 @@
 
 # CI/CD
 - GitHub Actions workflow automatically deploys to GitHub Pages
+- IMPORTANT: This repository must remain named `kelp.github.io` for GitHub Pages to function correctly with the custom domain
 
 # Substack Cross-posting
 - The site has automated cross-posting to Substack
