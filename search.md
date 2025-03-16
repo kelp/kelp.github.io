@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Search
+title: search
 permalink: /search/
 ---
 
 <div style="view-transition-name: search-content">
-  <h1>Search</h1>
+  <h1>search</h1>
   
   <div class="search-container">
     <form action="/search/" method="get">

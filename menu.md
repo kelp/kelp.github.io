@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Menu
+title: menu
 permalink: /menu/
 ---
 
 <div style="view-transition-name: menu-content">
-  <h1>Menu</h1>
+  <h1>menu</h1>
   <ul class="menu-list">
     <li><a href="/">Home</a></li>
     <li><a href="/about/">about</a></li>
