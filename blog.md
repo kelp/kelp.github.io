@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Archive
-permalink: /archive/
+title: blog
+permalink: /blog/
 ---
 
-<div class="archive">
+<div class="blog">
   <h1 class="page-heading">All Posts</h1>
   
   <ul class="post-list">

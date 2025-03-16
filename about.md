@@ -1,10 +1,8 @@
 ---
 layout: page
-title: About
+title: about
 permalink: /about/
 ---
-
-# About me
 
 I'm Travis Cole and I lead the Infrastructure team at PlanetScale, helping
 to make MySQL scale horizontally for lots of big applications.

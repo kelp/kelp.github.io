@@ -1,7 +1,7 @@
-# kelp.github.io
+# tcole.net
 
-[![Test Coverage: 99%](https://img.shields.io/badge/test%20coverage-99%25-brightgreen.svg)](https://github.com/kelp.github.io)
-[![Tests: Passing](https://img.shields.io/badge/tests-passing-brightgreen.svg)](https://github.com/kelp.github.io)
+[![Test Coverage: 99%](https://img.shields.io/badge/test%20coverage-99%25-brightgreen.svg)](https://github.com/kelp/tcole.net)
+[![Tests: Passing](https://img.shields.io/badge/tests-passing-brightgreen.svg)](https://github.com/kelp/tcole.net)
 [![Python: 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
@@ -71,9 +71,9 @@ If you encounter issues with the cross-posting workflow:
 
 ### Testing
 
-[![Tests: 29 passing](https://img.shields.io/badge/tests-29%20passing-brightgreen.svg)](https://github.com/kelp.github.io)
-[![Main Script Coverage: 98%](https://img.shields.io/badge/script%20coverage-98%25-brightgreen.svg)](https://github.com/kelp.github.io)
-[![Overall Coverage: 99%](https://img.shields.io/badge/overall%20coverage-99%25-brightgreen.svg)](https://github.com/kelp.github.io)
+[![Tests: 29 passing](https://img.shields.io/badge/tests-29%20passing-brightgreen.svg)](https://github.com/kelp/tcole.net)
+[![Main Script Coverage: 98%](https://img.shields.io/badge/script%20coverage-98%25-brightgreen.svg)](https://github.com/kelp/tcole.net)
+[![Overall Coverage: 99%](https://img.shields.io/badge/overall%20coverage-99%25-brightgreen.svg)](https://github.com/kelp/tcole.net)
 
 The cross-posting script includes comprehensive tests to ensure it works correctly without actually posting to Substack. We've provided several ways to run the tests:
 
