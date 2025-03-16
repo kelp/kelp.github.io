@@ -9,8 +9,8 @@ permalink: /search/
   
   <div class="search-container">
     <form action="/search/" method="get">
-      <input type="text" id="search-box" name="query" placeholder="Search..." class="search-input">
-      <button type="submit" class="search-button">Search</button>
+      <input type="text" id="search-box" name="query" placeholder="search..." class="search-input">
+      <button type="submit" class="search-button">search</button>
     </form>
   </div>
   
