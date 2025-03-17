@@ -33,6 +33,12 @@
 - GitHub Actions workflow automatically deploys to GitHub Pages
 - IMPORTANT: This repository must remain named `kelp.github.io` for GitHub Pages to function correctly with the custom domain
 
+# Communication Guidelines
+- Do not hallucinate or make up information
+- Be explicit when you're not sure about how to do something
+- Admit when you don't know the answer to a question
+- Ask clarifying questions when needed
+
 # Substack Cross-posting
 - The site has automated cross-posting to Substack
 - Posts in _posts/ can be published to Substack when pushed to the repository
