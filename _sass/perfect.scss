@@ -1,0 +1,308 @@
+/* Perfect Theme - Inspired by Perfect Motherfucking Website */
+
+/* Base styles */
+:root {
+  --bg-color: #eeeeee; /* Light gray background */
+  --text-color: #333;
+  --link-color: #0000EE; /* Classic link blue */
+  --link-visited: #551A8B; /* Classic visited link color */
+  --link-hover: #8b0000; /* Dark red on hover */
+  --max-width: 650px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2em 1em;
+  color: var(--text-color);
+  background: var(--bg-color);
+  text-rendering: optimizeLegibility;
+}
+
+/* Typography */
+h1, h2, h3 {
+  line-height: 1.2;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.6em; }
+h3 { font-size: 1.3em; }
+
+p, ul, ol {
+  margin-bottom: 1em;
+}
+
+ul, ol {
+  padding-left: 2em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--link-visited);
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+blockquote {
+  margin: 1em 0;
+  padding: 0 1em;
+  border-left: 0.25em solid #ddd;
+  color: #555;
+}
+
+code {
+  font-family: Consolas, monaco, monospace;
+  background-color: #f5f5f5;
+  padding: 0.2em 0.4em;
+  font-size: 85%;
+}
+
+pre {
+  padding: 1em;
+  overflow: auto;
+  background-color: #f5f5f5;
+  margin: 1em 0;
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin: 2em 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Headers and Navigation */
+header {
+  margin-bottom: 2em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1em;
+}
+
+nav {
+  margin-top: 1em;
+}
+
+.site-name {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.site-name a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.site-name a:hover {
+  text-decoration: underline;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0 0 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 1.5em;
+  margin-bottom: 0;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* Content */
+main {
+  margin-bottom: 3em;
+}
+
+article {
+  margin-bottom: 2em;
+}
+
+article header {
+  margin-bottom: 1em;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Posts */
+.post-title {
+  margin-top: 0;
+}
+
+time {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.categories {
+  margin-left: 1em;
+  font-size: 0.9em;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-meta {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Home page specific */
+.home .page-heading {
+  margin-top: 0;
+}
+
+.post-link {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.post-link:hover {
+  text-decoration: underline;
+}
+
+/* Full post on homepage */
+.full-post {
+  margin: 0;
+  padding: 0;
+}
+
+.full-post header h1 {
+  margin-top: 0;
+}
+
+.full-post time {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.full-post .categories {
+  margin-left: 1em;
+  font-size: 0.9em;
+}
+
+.all-posts-link {
+  margin-top: 2em;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  margin-top: 3em;
+  padding-top: 1em;
+  border-top: 1px solid #ddd;
+  font-size: 0.9em;
+  color: #666;
+  text-align: center;
+}
+
+.social {
+  margin: 1em 0;
+}
+
+.social a {
+  margin: 0 0.5em;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: baseline;
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: -0.15em;
+}
+
+.github-icon {
+  fill: var(--text-color);
+  transition: fill 0.2s ease;
+  line-height: 1;
+}
+
+.github-icon:hover {
+  fill: var(--link-hover);
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #222;
+    --text-color: #eee;
+    --link-color: #809fff;
+    --link-visited: #c586c0;
+    --link-hover: #ff6b6b;
+  }
+  
+  pre, code {
+    background-color: #333;
+  }
+  
+  blockquote {
+    border-left-color: #444;
+    color: #bbb;
+  }
+  
+  hr {
+    border-top-color: #444;
+  }
+  
+  header, footer {
+    border-color: #444;
+  }
+  
+  /* Override default syntax highlighting in dark mode */
+  .highlight {
+    background-color: #272822 !important;
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    padding: 1em;
+  }
+  
+  .menu li {
+    display: block;
+    margin: 0.5em 0;
+  }
+}

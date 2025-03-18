@@ -3,24 +3,33 @@ layout: default
 title: Home
 ---
 
-<div class="home" style="view-transition-name: filter-content">
-  <h1 class="page-heading">Recent Posts</h1>
-  
-  <div class="category-filters">
-    <a href="/" class="filter-link active">All Posts</a>
-    <a href="/category/jekyll/" class="filter-link">Jekyll</a>
-    <a href="/category/html/" class="filter-link">HTML</a>
-  </div>
-  
-  <ul class="post-list">
-    {% for post in site.posts limit:5 %}
-    <li style="view-transition-name: post-{{ post.id | slugify }}">
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-      <h2>
-        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-      </h2>
-      <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
-    </li>
-    {% endfor %}
-  </ul>
+<div class="home">
+  {% if site.posts.size > 0 %}
+    {% assign first_post = site.posts.first %}
+    <article class="full-post">
+      <header>
+        <h1>{{ first_post.title }}</h1>
+        <p>
+          <time datetime="{{ first_post.date | date_to_xmlschema }}">{{ first_post.date | date: "%b %-d, %Y" }}</time>
+          {% if first_post.categories %}
+            <span class="categories">
+              in 
+              {% for category in first_post.categories %}
+                <a href="{{ site.baseurl }}/categories/{{ category | slugify }}/">{{ category }}</a>
+              {% endfor %}
+            </span>
+          {% endif %}
+        </p>
+      </header>
+      {{ first_post.content }}
+      <p class="all-posts-link">
+        <a href="{{ site.baseurl }}/blog/">View all posts →</a>
+      </p>
+    </article>
+  {% else %}
+    <div class="no-posts">
+      <h1>Welcome to {{ site.title }}</h1>
+      <p>No articles have been published yet.</p>
+    </div>
+  {% endif %}
 </div>

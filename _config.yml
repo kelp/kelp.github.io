@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Travis Cole
-email: tc@tcole.net
+email: kelp@plek.org
 description: >- # this means to ignore newlines until "baseurl:"
   Travis Cole's Blog
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -27,7 +27,8 @@ url: "https://tcole.net" # the base hostname & protocol for your site, e.g. http
 github_username:  kelp
 
 # Build settings
-theme: minima
+# Using custom Perfect theme (locally)
+theme: 
 plugins:
   - jekyll-feed
 

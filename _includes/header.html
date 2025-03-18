@@ -1,14 +1,13 @@
-<header class="site-header">
-  <div class="wrapper">
-    <a class="site-title" href="{{ site.baseurl }}/" style="view-transition-name: site-title">{{ site.title }}</a>
-    <nav class="site-nav">
-      <div class="trigger">
-        <a class="page-link" href="{{ site.baseurl }}/about/">about</a>
-        <a class="page-link" href="{{ site.baseurl }}/blog/">blog</a>
-        <a class="page-link" href="{{ site.baseurl }}/projects/">projects</a>
-        <a class="page-link" href="{{ site.baseurl }}/search/" style="view-transition-name: search-button">search</a>
-        <a class="page-link menu-icon" href="{{ site.baseurl }}/menu/" style="view-transition-name: menu-button">menu</a>
-      </div>
-    </nav>
+<header>
+  <div class="site-name">
+    <a href="{{ site.baseurl }}/">{{ site.title }}</a>
   </div>
+  <nav>
+    <ul class="menu">
+      <li><a href="{{ site.baseurl }}/" {% if page.url == "/" %}aria-current="page"{% endif %}>Home</a></li>
+      <li><a href="{{ site.baseurl }}/about/" {% if page.url contains "/about/" %}aria-current="page"{% endif %}>About</a></li>
+      <li><a href="{{ site.baseurl }}/blog/" {% if page.url contains "/blog/" %}aria-current="page"{% endif %}>Blog</a></li>
+      <li><a href="{{ site.baseurl }}/projects/" {% if page.url contains "/projects/" %}aria-current="page"{% endif %}>Projects</a></li>
+    </ul>
+  </nav>
 </header>
