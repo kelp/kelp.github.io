@@ -18,13 +18,21 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Travis Cole
+title: tcole.net
 email: kelp@plek.org
 description: >- # this means to ignore newlines until "baseurl:"
-  Travis Cole's Blog
+  Travis Cole's personal site and blog
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tcole.net" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  kelp
+timezone: America/Los_Angeles
+
+# Display full articles on index
+show_full_articles_on_index: true
+
+# Social links
+social:
+  github: kelp
 
 # Build settings
 # Using custom Perfect theme (locally)

@@ -200,29 +200,44 @@ time {
   text-decoration: underline;
 }
 
-/* Full post on homepage */
-.full-post {
-  margin: 0;
-  padding: 0;
+/* Home with full article */
+.older-posts-heading {
+  margin-top: 2.5em;
+  padding-top: 1.5em;
+  border-top: 1px solid #ddd;
 }
 
-.full-post header h1 {
+.more-posts {
+  text-align: right;
+  margin-top: 1.5em;
+}
+
+.more-posts a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.more-posts a:hover {
+  text-decoration: underline;
+}
+
+/* Full post on homepage */
+.home article.post {
+  margin-bottom: 2em;
+}
+
+.home article.post .post-title {
   margin-top: 0;
 }
 
-.full-post time {
-  color: #666;
-  font-size: 0.9em;
+.home article.post .post-meta {
+  margin-bottom: 1.5em;
 }
 
-.full-post .categories {
-  margin-left: 1em;
-  font-size: 0.9em;
-}
-
-.all-posts-link {
-  margin-top: 2em;
-  text-align: center;
+@media (prefers-color-scheme: dark) {
+  .older-posts-heading {
+    border-top-color: #444;
+  }
 }
 
 /* Footer */
