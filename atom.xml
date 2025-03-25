@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Travis Cole</title>
+    <subtitle>Travis Cole&#x27;s personal website and blog</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://tcole.net/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://tcole.net"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-03-24T00:00:00+00:00</updated>
+    <id>https://tcole.net/atom.xml</id>
+    <entry xml:lang="en">
+        <title>LLMs are an OS, or weird computers</title>
+        <published>2025-03-24T00:00:00+00:00</published>
+        <updated>2025-03-24T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://tcole.net/blog/llms-are-an-os-or-weird-computers/"/>
+        <id>https://tcole.net/blog/llms-are-an-os-or-weird-computers/</id>
+        
+        <content type="html" xml:base="https://tcole.net/blog/llms-are-an-os-or-weird-computers/">&lt;h1 id=&quot;llms-are-an-os-or-weird-computers&quot;&gt;LLMs are an OS, or weird computers&lt;&#x2F;h1&gt;
+&lt;p&gt;Phillip Carter on &lt;a href=&quot;https:&#x2F;&#x2F;www.phillipcarter.dev&#x2F;posts&#x2F;llms-computers&quot;&gt;LLMs as weird computers&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If traditional computers are precision machines that struggle with fuzziness, LLMs are the
+inverse: fuzzy machines that struggle with precision (unless calling out to a traditional
+computer to do a precision task).&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;I&#x27;ve been thinking about this since I stumbled on it, and I think it&#x27;s a very astute observation
+about the nature of LLMs. And it&#x27;s early days, we&#x27;re just getting started figuring out how to
+use them effectively.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
