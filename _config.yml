@@ -34,6 +34,11 @@ show_full_articles_on_index: true
 social:
   github: kelp
 
+# Additional social media links
+bluesky_url: "https://bsky.app/profile/tcole.net"
+mastodon_url: "https://hachyderm.io/@kelp"
+linkedin_url: "https://www.linkedin.com/in/traviscole/"
+
 # Build settings
 # Using custom Perfect theme (locally)
 theme: 

@@ -264,15 +264,12 @@ footer {
 .icon {
   display: inline-block;
   vertical-align: -0.15em;
-}
-
-.github-icon {
   fill: var(--text-color);
   transition: fill 0.2s ease;
   line-height: 1;
 }
 
-.github-icon:hover {
+.icon:hover {
   fill: var(--link-hover);
 }
 
