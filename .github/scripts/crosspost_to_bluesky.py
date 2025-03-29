@@ -73,23 +73,31 @@ def generate_summary_with_claude(title: str, content: str, max_length: int) -> s
     try:
         client = anthropic.Anthropic(api_key=api_key)
         
-        # Look for quotes in the content - if there are quotes, we might be linking to another blog
+        # Try to detect if this is commenting on someone else's post
         has_quotes = '>' in content
+        attribution_pattern = re.search(r'([A-Z][a-z]+ [A-Z][a-z]+) on \[(.*?)\]', content)
         
-        if has_quotes:
+        if has_quotes or attribution_pattern:
+            # Extract the author and post name if available
+            author_name = ""
+            referenced_post = ""
+            
+            if attribution_pattern:
+                author_name = attribution_pattern.group(1)
+                referenced_post = attribution_pattern.group(2)
+                reference_info = f"{author_name}'s post '{referenced_post}'"
+            else:
+                reference_info = "another post"
+                
             prompt = f"""
-            Extract 1-2 key sentences from this short blog post titled "{title}".
+            This blog post is briefly commenting on {reference_info}. Create a 1-2 sentence summary that:
             
-            The blog post appears to be referencing another article or blog post.
-            
-            Rules:
-            1. Maximum {max_length} characters
-            2. Do not call this a "summary" or talk about what the post is doing
-            3. No introduction phrases or meta-commentary
-            4. Just give the core thought or observation
-            5. Extremely plain, matter-of-fact tone
-            6. If there's a quote in the post, use that as your primary source
-            7. Write like the author - very direct and sparse
+            1. Clearly states this is a comment on someone else's content (use their name if provided)
+            2. Maximum {max_length} characters
+            3. Includes a key quote if one is present in the original
+            4. Mentions the author's reaction/thoughts if provided
+            5. Uses very direct, plain language
+            6. Starts with "On [author]'s post about [topic]..." if author information is available
             
             Here's the blog post:
             {content}
