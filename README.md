@@ -5,3 +5,81 @@
 > **IMPORTANT**: This repository must remain named `kelp.github.io` for GitHub Pages to function correctly with the custom domain. Renaming this repository will break the GitHub Pages configuration and custom domain setup.
 
 This is a Jekyll-powered personal website and blog for Travis Cole. The site is automatically deployed to GitHub Pages at [tcole.net](https://tcole.net).
+
+## Features
+
+- Built with Jekyll
+- Responsive design
+- Automatically deployed to GitHub Pages
+- Auto-crossposting to Bluesky
+
+## Usage
+
+### Local Development
+
+See the `Makefile` for common commands:
+
+```bash
+# Install dependencies
+make install
+
+# Run local server
+make serve
+
+# Create a new post
+make new-post title="My New Post"
+```
+
+### Bluesky Cross-posting
+
+This repository includes an automated GitHub Action that cross-posts blog posts to Bluesky when they're published. The action runs whenever new posts are added to the `_posts/` directory.
+
+#### How It Works
+
+1. When a blog post is added or modified in the `_posts/` directory, the GitHub Action is triggered.
+2. The action extracts the title, content, and URL for the post.
+3. A post is created on Bluesky with:
+   - The title as a clickable link back to the blog post
+   - A short summary extracted from the post content
+   - Proper formatting for Bluesky's character limits
+
+#### Setup Requirements
+
+To use the Bluesky cross-posting feature, you need to add the following secrets to your GitHub repository:
+
+- `BLUESKY_IDENTIFIER`: Your Bluesky handle (e.g., `tcole.net`)
+- `BLUESKY_PASSWORD`: Your Bluesky app password
+
+#### Configuration
+
+The cross-posting behavior can be customized by modifying:
+
+- `.github/workflows/bluesky-crosspost.yml`: The GitHub workflow configuration
+- `.github/scripts/crosspost_to_bluesky.py`: The Python script that handles the cross-posting logic
+- `.github/bluesky-published.json`: Tracks which posts have been published to avoid duplicates
+
+#### Manual Triggers
+
+You can manually trigger the cross-posting workflow for existing posts:
+
+```bash
+gh workflow run "Cross-post to Bluesky" --ref main
+```
+
+This will post the most recent blog post to Bluesky, even if it has been posted before.
+
+#### Post Formatting
+
+Posts on Bluesky will appear with the following format:
+
+```
+A new post on my blog:
+
+[Title of the Post] (clickable link to the blog post)
+
+Summary text extracted from the blog post...
+```
+
+#### Draft Posts
+
+Posts with `draft: true` in their front matter will be skipped and not cross-posted to Bluesky.
