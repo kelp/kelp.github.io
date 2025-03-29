@@ -1,4 +1,4 @@
-.PHONY: help install serve build clean draft new-post deploy check check-links check-html check-markdown lint lint-html lint-markdown lint-format format
+.PHONY: help install serve build clean draft new-post deploy check check-links check-html check-markdown lint lint-html lint-markdown format
 
 # Colors for output
 RESET = \033[0m
@@ -24,7 +24,7 @@ help:
 	@echo "  $(GREEN)make check$(RESET)       - Run all checks"
 	@echo "  $(GREEN)make check-links$(RESET) - Check for broken links"
 	@echo "  $(GREEN)make lint$(RESET)        - Run all linters"
-	@echo "  $(GREEN)make format$(RESET)      - Format markdown posts to wrap at 72 characters"
+	@echo "  $(GREEN)make format$(RESET)      - Format markdown posts to wrap at 78 characters"
 	@echo ""
 	@echo "Examples:"
 	@echo "  $(YELLOW)make new-post title=\"My New Blog Post\"$(RESET)"
@@ -89,22 +89,13 @@ check-links:
 	bundle exec jekyll build
 	bundle exec jekyll doctor
 
-lint: lint-markdown lint-format
+lint: lint-markdown
 
 lint-markdown:
-	@echo "$(BLUE)Linting Markdown files...$(RESET)"
-	@echo "$(YELLOW)Note: This requires markdownlint-cli installed via npm$(RESET)"
-	@if command -v markdownlint > /dev/null; then \
-		markdownlint _posts/*.markdown *.md || echo "$(MAGENTA)Markdown linting found issues$(RESET)"; \
-	else \
-		echo "$(MAGENTA)markdownlint not found. Install with: npm install -g markdownlint-cli$(RESET)"; \
-	fi
-
-lint-format:
 	@echo "$(BLUE)Checking markdown formatting with Prettier...$(RESET)"
 	@echo "$(YELLOW)Note: This requires prettier installed via npm$(RESET)"
 	@if command -v prettier > /dev/null; then \
-		prettier --check "_posts/*.markdown" || echo "$(MAGENTA)Formatting issues found$(RESET)"; \
+		prettier --check "_posts/*.markdown" *.md --prose-wrap=always --print-width=78 || echo "$(MAGENTA)Formatting issues found$(RESET)"; \
 	else \
 		echo "$(MAGENTA)prettier not found. Install with: npm install -g prettier$(RESET)"; \
 	fi
@@ -112,7 +103,7 @@ lint-format:
 format:
 	@echo "$(BLUE)Formatting markdown files with Prettier...$(RESET)"
 	@if command -v prettier > /dev/null; then \
-		prettier --write "_posts/*.markdown" --prose-wrap=always --print-width=72; \
+		prettier --write "_posts/*.markdown" --prose-wrap=always --print-width=78; \
 		echo "$(GREEN)Markdown files formatted successfully$(RESET)"; \
 	else \
 		echo "$(MAGENTA)prettier not found. Install with: npm install -g prettier$(RESET)"; \

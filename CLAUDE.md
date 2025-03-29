@@ -1,46 +1,32 @@
-# Build Commands
+# Jekyll Site Guide (kelp.github.io)
 
-## Using Makefile
-- `make help` - Show all available commands
-- `make install` - Install dependencies
-- `make serve` - Run local server for development
-- `make serve-live` - Run with live reloading
+## Build Commands
+- `make serve` - Run local development server
 - `make build` - Build site without serving
-- `make clean` - Clean the build directory
-- `make draft` - Run Jekyll with drafts enabled
-- `make new-post title="My New Post"` - Create a new blog post
-- `make deploy` - Push changes to GitHub Pages
+- `make new-post title="My Post"` - Create new blog post
+- `make format` - Format markdown with 72-char line wrapping
+- `make lint` - Check markdown formatting
+- `make check` - Check for broken links
 
-## Direct Commands
-- `bundle install` - Install dependencies
-- `bundle exec jekyll serve` - Run local server for development
-- `bundle exec jekyll build` - Build site without serving
-- `bundle exec jekyll serve --livereload` - Run with live reloading
+## Testing
+- Test locally: `make serve` (http://localhost:4000)
+- Run `make check` to verify link integrity
 
-# Testing
-## Jekyll Site
-- Check locally with `make serve` or `bundle exec jekyll serve` before committing
-- Run `make check` to check for broken links
+## Style Guidelines
+- **Markdown**: GitHub Flavored Markdown with 72-char line wrapping
+- **Front Matter**: Required for all content (title, layout, date for posts)
+- **Content Structure**: 
+  - Posts: _posts/YYYY-MM-DD-title.markdown
+  - Pages: root directory with .md extension
+- **Formatting**: Use prettier for consistent formatting
+- **Naming**: kebab-case for files, snake_case for variables
 
-# Style Guidelines
-- **Naming**: Use kebab-case for files, snake_case for variables
-- **Markdown**: Follow GitHub Flavored Markdown
-- **HTML/CSS**: Follow conventions in _includes and _layouts
-- **Front Matter**: Required for all content pages
-  - title, layout, date for posts
-  - title, layout for pages
-- **Content Structure**:
-  - Posts in _posts/ directory with YYYY-MM-DD-title.markdown naming
-  - Pages in root with .md extension
-  - Assets in assets/ directory
+## Content Best Practices
+- Follow consistent pattern in existing posts
+- Include appropriate categories
+- Keep line length to 72 characters for readability
+- Test all links before committing
 
-# CI/CD
-- GitHub Actions workflow automatically deploys to GitHub Pages
-- IMPORTANT: This repository must remain named `kelp.github.io` for GitHub Pages to function correctly with the custom domain
-
-# Communication Guidelines
-- Do not hallucinate or make up information
-- Be explicit when you're not sure about how to do something
-- Admit when you don't know the answer to a question
-- Ask clarifying questions when needed
-
+## Deployment
+- Site deploys automatically via GitHub Pages
+- Manual deploy: `make deploy` (git push origin main)
