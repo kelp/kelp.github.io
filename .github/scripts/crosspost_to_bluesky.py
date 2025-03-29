@@ -74,14 +74,16 @@ def generate_summary_with_claude(title: str, content: str, max_length: int) -> s
         client = anthropic.Anthropic(api_key=api_key)
         
         prompt = f"""
-        I need a concise summary of this blog post titled "{title}". 
+        Create a brief summary of this blog post titled "{title}".
         
-        The summary:
-        1. Must be under {max_length} characters (including spaces and punctuation)
-        2. Should capture the key points of the post
-        3. Should be engaging and make readers want to read the full post
-        4. Should sound natural, not like a mechanical summary
-        5. Must not use phrases like "This post discusses" or "The author explains"
+        Requirements:
+        1. Keep it under {max_length} characters total
+        2. Write in a straightforward, conversational tone
+        3. Avoid marketing language or hype
+        4. Don't use phrases like "This post explores" or "The author discusses"
+        5. Focus on the actual content and ideas, not meta-commentary
+        6. Be specific rather than vague
+        7. Write like you're telling a friend about something interesting you read
         
         Here's the blog post:
         {content}
@@ -92,8 +94,8 @@ def generate_summary_with_claude(title: str, content: str, max_length: int) -> s
         response = client.messages.create(
             model="claude-3-5-haiku-latest",
             max_tokens=300,
-            temperature=0.7,
-            system="You are a summarization expert who creates concise, engaging summaries of blog posts.",
+            temperature=0.4, # Lower temperature for more straightforward output
+            system="Summarize blog posts in a natural, conversational way without marketing language or unnecessary fluff.",
             messages=[{"role": "user", "content": prompt}]
         )
         
