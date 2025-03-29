@@ -1,0 +1,23 @@
+# Build artifacts
+_site/
+.jekyll-cache/
+.sass-cache/
+
+# Vendor directories
+vendor/
+node_modules/
+
+# Ruby files
+Gemfile
+Gemfile.lock
+
+# Generated files
+.DS_Store
+.jekyll-metadata
+
+# Jekyll config
+_config.yml
+
+# Don't format code blocks inside markdown files
+# (Prettier will still format the rest of the document)
+```
