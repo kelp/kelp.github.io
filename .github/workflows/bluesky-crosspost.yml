@@ -5,6 +5,9 @@ on:
     branches: [main]
     paths:
       - '_posts/**'
+  
+  # Allow manual triggering of the workflow
+  workflow_dispatch:
 
 # Set permissions for the GITHUB_TOKEN
 permissions:
@@ -39,10 +42,17 @@ jobs:
       - name: Find changed posts
         id: changed-posts
         run: |
-          # Get list of changed files
-          CHANGED_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep "_posts/" | tr '\n' ' ')
-          echo "Changed files: $CHANGED_FILES"
-          echo "changed_files=$CHANGED_FILES" >> $GITHUB_OUTPUT
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            # When manually triggered, use the latest post
+            LATEST_POST=$(find _posts -type f -name "*.markdown" -o -name "*.md" | sort -r | head -n1)
+            echo "Using latest post: $LATEST_POST"
+            echo "changed_files=$LATEST_POST" >> $GITHUB_OUTPUT
+          else
+            # Otherwise get list of changed files from the push event
+            CHANGED_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep "_posts/" | tr '\n' ' ')
+            echo "Changed files: $CHANGED_FILES"
+            echo "changed_files=$CHANGED_FILES" >> $GITHUB_OUTPUT
+          fi
       
       - name: Crosspost to Bluesky
         if: steps.changed-posts.outputs.changed_files != ''
