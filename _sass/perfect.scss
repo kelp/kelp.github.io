@@ -7,7 +7,7 @@
   --link-color: #0000EE; /* Classic link blue */
   --link-visited: #551A8B; /* Classic visited link color */
   --link-hover: #8b0000; /* Dark red on hover */
-  --max-width: 650px;
+  --max-width: 850px;
 }
 
 * {
@@ -78,11 +78,13 @@ code {
 
 pre {
   padding: 1em;
-  overflow: auto;
+  overflow-x: auto;
   background-color: #f5f5f5;
   margin: 1em 0;
   max-width: 100%;
   border-radius: 3px;
+  word-wrap: normal;
+  word-break: normal;
 }
 
 pre code {

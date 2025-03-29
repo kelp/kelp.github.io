@@ -2,3 +2,13 @@
 ---
 
 @import "perfect";
+
+/* Rouge syntax highlighting - github theme for light mode */
+@media (prefers-color-scheme: light) {
+  @import "rouge/github";
+}
+
+/* Rouge syntax highlighting - monokai theme for dark mode */
+@media (prefers-color-scheme: dark) {
+  @import "rouge/monokai";
+}
