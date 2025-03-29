@@ -1,4 +1,17 @@
 # Build Commands
+
+## Using Makefile
+- `make help` - Show all available commands
+- `make install` - Install dependencies
+- `make serve` - Run local server for development
+- `make serve-live` - Run with live reloading
+- `make build` - Build site without serving
+- `make clean` - Clean the build directory
+- `make draft` - Run Jekyll with drafts enabled
+- `make new-post title="My New Post"` - Create a new blog post
+- `make deploy` - Push changes to GitHub Pages
+
+## Direct Commands
 - `bundle install` - Install dependencies
 - `bundle exec jekyll serve` - Run local server for development
 - `bundle exec jekyll build` - Build site without serving
@@ -6,7 +19,8 @@
 
 # Testing
 ## Jekyll Site
-- Check locally with `bundle exec jekyll serve` before committing
+- Check locally with `make serve` or `bundle exec jekyll serve` before committing
+- Run `make check` to check for broken links
 
 # Style Guidelines
 - **Naming**: Use kebab-case for files, snake_case for variables
