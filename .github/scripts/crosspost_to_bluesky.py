@@ -90,30 +90,29 @@ def generate_summary_with_claude(title: str, content: str, max_length: int) -> s
                 reference_info = "another post"
                 
             prompt = f"""
-            This blog post is briefly commenting on {reference_info}. Create a 1-2 sentence summary that:
+            This blog post is a brief comment on {reference_info}. Write a 1-2 sentence response that:
             
-            1. Clearly states this is a comment on someone else's content (use their name if provided)
-            2. Maximum {max_length} characters
-            3. Includes a key quote if one is present in the original
-            4. Mentions the author's reaction/thoughts if provided
-            5. Uses very direct, plain language
-            6. Starts with "On [author]'s post about [topic]..." if author information is available
+            1. Clearly references the original content
+            2. Stays under {max_length} characters
+            3. Is extremely plain and direct
+            4. Ideally starts with "On [topic]:" 
+            5. Doesn't use any promotional language or over-enthusiastic reactions
+            6. If there's a quote in the original, extract the key idea from it
+            7. If the author has added their own thought, include it very briefly
             
             Here's the blog post:
             {content}
             """
         else:
             prompt = f"""
-            Extract the key point from this blog post titled "{title}".
+            For this short blog post titled "{title}", give me 1-2 extremely simple, direct sentences that:
             
-            Rules:
-            1. Maximum {max_length} characters
-            2. Super direct and plain - no marketing language at all
-            3. No phrases like "this post" or "the author"
-            4. No hype words like "fascinating", "exciting", "powerful", etc.
-            5. Just the raw information
-            6. 1-2 sentences maximum
-            7. Extremely matter-of-fact tone
+            1. Stay under {max_length} characters total
+            2. Contain just the core information - no fluff or commentary
+            3. Avoid all marketing language, adjectives, and hype
+            4. Never refer to "this post" or "the author"
+            5. Use a plain, matter-of-fact tone like you're taking brief notes
+            6. Focus on the actual content, not meta-description
             
             Here's the blog post:
             {content}
@@ -123,7 +122,7 @@ def generate_summary_with_claude(title: str, content: str, max_length: int) -> s
             model="claude-3-5-haiku-latest",
             max_tokens=300,
             temperature=0.2, # Very low temperature for direct, unembellished output
-            system="Extract factual information without embellishment. Be extremely concise and direct.",
+            system="You extract only the core facts in the plainest possible language, avoiding all descriptive or promotional language.",
             messages=[{"role": "user", "content": prompt}]
         )
         
