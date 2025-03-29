@@ -96,34 +96,31 @@ def post_to_bluesky(
         # Truncate the title if it's too long
         if len(title) > 70:
             title = title[:67] + "..."
-            
-        # Start with just the most critical components
-        post_text = f"{title}\n\n{post_url}"
         
-        # Calculate space available for summary
-        available_space = MAX_TOTAL_POST_LENGTH - len(post_text) - 10  # 10 chars buffer
+        # Format as requested: A new post on my blog: URL, headline, summary
+        intro = "A new post on my blog: "
+        
+        # Calculate space available for summary after including intro, URL, and title
+        base_text = f"{intro}{post_url}\n\n{title}\n\n"
+        available_space = MAX_TOTAL_POST_LENGTH - len(base_text) - 5  # 5 chars buffer
         
         # Make sure we have some space for summary
         if available_space > 20:
             # If the summary fits in available space, add it
             if len(summary) <= available_space:
-                post_text = f"{title}\n\n{summary}\n\n{post_url}"
+                post_text = f"{base_text}{summary}"
             else:
                 # Otherwise truncate summary
                 truncated_summary = summary[:available_space-3] + "..."
-                post_text = f"{title}\n\n{truncated_summary}\n\n{post_url}"
+                post_text = f"{base_text}{truncated_summary}"
+        else:
+            # Not enough space for summary, just use intro, URL and title
+            post_text = base_text
         
-        # Add a single category hashtag if there's room
-        if categories and len(post_text) < MAX_TOTAL_POST_LENGTH - 15:
-            # Take just the first category
-            main_category = categories[0] if isinstance(categories, list) else categories
-            main_category = main_category.replace(' ', '')
-            post_text = f"{post_text}\n\n#{main_category}"
-            
         # Final check to ensure we're within limits
         if len(post_text) > MAX_TOTAL_POST_LENGTH:
-            # Emergency truncation - just title and URL
-            post_text = f"{title[:100]}\n\n{post_url}"
+            # Emergency truncation - just intro, URL and shortened title
+            post_text = f"{intro}{post_url}\n\n{title[:50]}..."
         
         # Create the post
         client.send_post(post_text)
