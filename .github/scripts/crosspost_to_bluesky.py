@@ -73,29 +73,49 @@ def generate_summary_with_claude(title: str, content: str, max_length: int) -> s
     try:
         client = anthropic.Anthropic(api_key=api_key)
         
-        prompt = f"""
-        Create a brief summary of this blog post titled "{title}".
+        # Look for quotes in the content - if there are quotes, we might be linking to another blog
+        has_quotes = '>' in content
         
-        Requirements:
-        1. Keep it under {max_length} characters total
-        2. Write in a straightforward, conversational tone
-        3. Avoid marketing language or hype
-        4. Don't use phrases like "This post explores" or "The author discusses"
-        5. Focus on the actual content and ideas, not meta-commentary
-        6. Be specific rather than vague
-        7. Write like you're telling a friend about something interesting you read
-        
-        Here's the blog post:
-        {content}
-        
-        Summary:
-        """
+        if has_quotes:
+            prompt = f"""
+            Extract 1-2 key sentences from this short blog post titled "{title}".
+            
+            The blog post appears to be referencing another article or blog post.
+            
+            Rules:
+            1. Maximum {max_length} characters
+            2. Do not call this a "summary" or talk about what the post is doing
+            3. No introduction phrases or meta-commentary
+            4. Just give the core thought or observation
+            5. Extremely plain, matter-of-fact tone
+            6. If there's a quote in the post, use that as your primary source
+            7. Write like the author - very direct and sparse
+            
+            Here's the blog post:
+            {content}
+            """
+        else:
+            prompt = f"""
+            Extract the key point from this blog post titled "{title}".
+            
+            Rules:
+            1. Maximum {max_length} characters
+            2. Super direct and plain - no marketing language at all
+            3. No phrases like "this post" or "the author"
+            4. No hype words like "fascinating", "exciting", "powerful", etc.
+            5. Just the raw information
+            6. 1-2 sentences maximum
+            7. Extremely matter-of-fact tone
+            
+            Here's the blog post:
+            {content}
+            """
         
         response = client.messages.create(
             model="claude-3-5-haiku-latest",
             max_tokens=300,
-            temperature=0.4, # Lower temperature for more straightforward output
-            system="Summarize blog posts in a natural, conversational way without marketing language or unnecessary fluff.",
+            temperature=0.2, # Very low temperature for direct, unembellished output
+            system="Extract factual information without embellishment. Be extremely concise and direct.",
             messages=[{"role": "user", "content": prompt}]
         )
         
