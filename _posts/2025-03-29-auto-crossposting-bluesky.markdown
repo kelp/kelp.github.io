@@ -1,8 +1,6 @@
 ---
 layout: post
-title:
-  "Vibe Coding Automated Cross-posting from Jekyll to Bluesky with AI
-  Generated Summary"
+title: "Vibe Coding: Auto-Crossposting from Jekyll to Bluesky"
 date: 2025-03-29
 categories: [ai, projects, tools]
 draft: true
@@ -18,7 +16,7 @@ which is Anthropic's coding agent, released on February 24th, 2025.
 
 I wanted a system that would:
 
-1. Detect new posts in my Jekyll blog
+1. Detect new posts in my Jekyll blog, hosted on GitHub Pages
 2. Create a Bluesky post with a clickable link to my blog
 3. Include a brief summary of the post
 4. Skip any draft posts
@@ -26,10 +24,11 @@ I wanted a system that would:
 
 ## The Solution: GitHub Actions + atproto
 
-I asked Claude Code to design a solution and discuss it with me before we
-started writing code. We went back and forth about how to track what had
-already been posted, but settled on a simple solution: have GitHub Actions
-commit a JSON file that tracks posts.
+I asked Claude Code to design a solution using
+[ATProto](https://atproto.blue/) and discuss it with me before we started
+writing code. We went back and forth about how to track what had already been
+posted, but settled on a simple solution: have GitHub Actions commit a JSON
+file that tracks posts.
 
 For this project, we built:
 
