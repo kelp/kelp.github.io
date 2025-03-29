@@ -3,7 +3,6 @@ layout: post
 title: "Vibe Coding: Auto-Crossposting from Jekyll to Bluesky"
 date: 2025-03-29
 categories: [ai, projects, tools]
-draft: true
 ---
 
 Last night I automated cross-posting from my Jekyll blog to my Bluesky account
