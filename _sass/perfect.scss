@@ -234,8 +234,13 @@ time {
   margin-bottom: 1.5em;
 }
 
+.post-separator {
+  margin: 2.5em 0;
+  border-top-color: #ddd;
+}
+
 @media (prefers-color-scheme: dark) {
-  .older-posts-heading {
+  .post-separator {
     border-top-color: #444;
   }
 }
