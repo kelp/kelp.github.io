@@ -2,7 +2,7 @@
 layout: post
 title: "LLMs are an OS, or weird computers"
 date: 2025-03-24
-categories: []
+categories: [ai, programming, tools]
 draft: false
 ---
 
