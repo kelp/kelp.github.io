@@ -11,6 +11,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Optional, Set
 
+import anthropic
 import frontmatter
 import markdown
 from atproto import Client
@@ -62,8 +63,57 @@ def save_published_posts(published: Set[str]) -> None:
     with open(published_file_path, "w", encoding="utf-8") as f:
         json.dump({"published": sorted(normalized_paths)}, f, indent=2)
 
-def extract_summary(content: str, max_length: int = MAX_SUMMARY_LENGTH) -> str:
-    """Extract a summary from the post content."""
+def generate_summary_with_claude(title: str, content: str, max_length: int) -> str:
+    """Generate a summary of the blog post using Claude via the Anthropic API."""
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    if not api_key:
+        print("Warning: No Anthropic API key found. Falling back to simple summary extraction.")
+        return extract_simple_summary(content, max_length)
+    
+    try:
+        client = anthropic.Anthropic(api_key=api_key)
+        
+        prompt = f"""
+        I need a concise summary of this blog post titled "{title}". 
+        
+        The summary:
+        1. Must be under {max_length} characters (including spaces and punctuation)
+        2. Should capture the key points of the post
+        3. Should be engaging and make readers want to read the full post
+        4. Should sound natural, not like a mechanical summary
+        5. Must not use phrases like "This post discusses" or "The author explains"
+        
+        Here's the blog post:
+        {content}
+        
+        Summary:
+        """
+        
+        response = client.messages.create(
+            model="claude-3-5-haiku-latest",
+            max_tokens=300,
+            temperature=0.7,
+            system="You are a summarization expert who creates concise, engaging summaries of blog posts.",
+            messages=[{"role": "user", "content": prompt}]
+        )
+        
+        # Extract the summary from the response
+        summary = response.content[0].text.strip()
+        
+        # Ensure it's within the length limit
+        if len(summary) > max_length:
+            summary = summary[:max_length-3] + "..."
+            
+        return summary
+    
+    except Exception as e:
+        print(f"Error generating summary with Claude: {e}")
+        # Fall back to simple extraction if API call fails
+        return extract_simple_summary(content, max_length)
+
+
+def extract_simple_summary(content: str, max_length: int) -> str:
+    """Extract a simple summary from the post content (fallback method)."""
     # Convert markdown to plain text
     html = markdown.markdown(content)
     # Remove HTML tags
@@ -100,27 +150,14 @@ def post_to_bluesky(
         # Format post as "A new post on my blog:" followed by title (as link) and summary
         intro = "A new post on my blog:\n\n"
         
-        # Calculate space available for summary
-        base_text = f"{intro}{title}\n\n"
-        available_space = MAX_TOTAL_POST_LENGTH - len(base_text) - 5  # 5 chars buffer
-        
-        # Make sure we have some space for summary
-        if available_space > 20:
-            # If the summary fits in available space, add it
-            if len(summary) <= available_space:
-                post_text = f"{base_text}{summary}"
-            else:
-                # Otherwise truncate summary
-                truncated_summary = summary[:available_space-3] + "..."
-                post_text = f"{base_text}{truncated_summary}"
-        else:
-            # Not enough space for summary, just use intro and title
-            post_text = base_text
+        # Create the post text with the title and summary
+        # (summary has already been sized appropriately in process_post)
+        post_text = f"{intro}{title}\n\n{summary}"
         
         # Final check to ensure we're within limits
         if len(post_text) > MAX_TOTAL_POST_LENGTH:
-            # Emergency truncation - just intro and shortened title
-            post_text = f"{intro}{title[:100]}..."
+            # Emergency truncation - just intro and title
+            post_text = f"{intro}{title}"
             
         # Create rich text facets for the title to make it a clickable link
         # Calculate the UTF-8 byte index of the title in the text
@@ -236,8 +273,13 @@ def process_post(post_path: str, published_posts: Set[str]) -> Optional[Dict]:
             # No categories, use the default Jekyll URL format
             post_url = f"{SITE_URL}/{date_path}/{clean_slug}.html"
         
-        # Extract summary
-        summary = extract_summary(post.content)
+        # Calculate available space for the summary
+        intro = "A new post on my blog:\n\n"
+        base_text = f"{intro}{title}\n\n"
+        available_chars = MAX_TOTAL_POST_LENGTH - len(base_text) - 10  # 10 chars buffer
+        
+        # Generate summary using Claude (with available space constraint)
+        summary = generate_summary_with_claude(title, post.content, available_chars)
         
         return {
             "path": post_path,
@@ -262,6 +304,12 @@ def main():
         print("ERROR: Bluesky credentials not found in environment variables.")
         print("Please set BLUESKY_IDENTIFIER and BLUESKY_PASSWORD as repository secrets.")
         sys.exit(1)
+    
+    # Check for Anthropic API key (optional)
+    anthropic_key = os.environ.get("ANTHROPIC_API_KEY")
+    if not anthropic_key:
+        print("WARNING: Anthropic API key not found. Will use simple text summarization instead.")
+        print("To use Claude for better summaries, set ANTHROPIC_API_KEY as a repository secret.")
     
     # Get changed post files from command line arguments
     changed_files = sys.argv[1:]
