@@ -25,3 +25,5 @@ Steve Yegge on [Revenge of the Junior Developer](https://sourcegraph.com/blog/re
 I've been using Claude Code a lot, and it's far more useful than the previous
 generation of AI coding tools. It's allowed me to quickly write code, fix 
 issues, and deploy things that I previously had no idea how to even do.
+
+This post has been automatically cross-posted to [my Bluesky profile](https://bsky.app/profile/tcole.net).
