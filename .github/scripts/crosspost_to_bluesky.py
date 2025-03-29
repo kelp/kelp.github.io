@@ -97,11 +97,11 @@ def post_to_bluesky(
         if len(title) > 70:
             title = title[:67] + "..."
         
-        # Format as requested: A new post on my blog: URL, headline, summary
-        intro = "A new post on my blog: "
+        # Format post as "A new post on my blog:" followed by title (as link) and summary
+        intro = "A new post on my blog:\n\n"
         
-        # Calculate space available for summary after including intro, URL, and title
-        base_text = f"{intro}{post_url}\n\n{title}\n\n"
+        # Calculate space available for summary
+        base_text = f"{intro}{title}\n\n"
         available_space = MAX_TOTAL_POST_LENGTH - len(base_text) - 5  # 5 chars buffer
         
         # Make sure we have some space for summary
@@ -114,16 +114,47 @@ def post_to_bluesky(
                 truncated_summary = summary[:available_space-3] + "..."
                 post_text = f"{base_text}{truncated_summary}"
         else:
-            # Not enough space for summary, just use intro, URL and title
+            # Not enough space for summary, just use intro and title
             post_text = base_text
         
         # Final check to ensure we're within limits
         if len(post_text) > MAX_TOTAL_POST_LENGTH:
-            # Emergency truncation - just intro, URL and shortened title
-            post_text = f"{intro}{post_url}\n\n{title[:50]}..."
+            # Emergency truncation - just intro and shortened title
+            post_text = f"{intro}{title[:100]}..."
+            
+        # Create rich text facets for the title to make it a clickable link
+        # Calculate the UTF-8 byte index of the title in the text
+        intro_bytes_length = len(intro.encode('utf-8'))
+        title_bytes_length = len(title.encode('utf-8'))
         
-        # Create the post
-        client.send_post(post_text)
+        # Create a facet (rich text link) that makes the title clickable
+        facets = [
+            {
+                "index": {
+                    "byteStart": intro_bytes_length,
+                    "byteEnd": intro_bytes_length + title_bytes_length
+                },
+                "features": [
+                    {
+                        "$type": "app.bsky.richtext.facet#link",
+                        "uri": post_url
+                    }
+                ]
+            }
+        ]
+        
+        # Create the post with rich text
+        client.com.atproto.repo.create_record({
+            "repo": client.me.did,
+            "collection": "app.bsky.feed.post",
+            "record": {
+                "$type": "app.bsky.feed.post",
+                "text": post_text,
+                "facets": facets,
+                "createdAt": datetime.now().isoformat(),
+            }
+        })
+        
         print(f"Successfully posted to Bluesky: {title}")
         return True
     except Exception as e:
