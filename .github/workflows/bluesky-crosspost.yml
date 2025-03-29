@@ -16,8 +16,8 @@ permissions:
 jobs:
   crosspost:
     runs-on: ubuntu-latest
-    # Run for any push event - repository permissions will restrict to the correct repo
-    if: github.event_name == 'push'
+    # Run for push events or manual triggers
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
     
     steps:
       - name: Checkout repository
