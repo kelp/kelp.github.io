@@ -17,8 +17,8 @@ from atproto import Client
 
 # Constants
 SITE_URL = "https://tcole.net"
-MAX_BLUESKY_POST_LENGTH = 300  # Characters in summary
-MAX_TOTAL_POST_LENGTH = 1000   # Total maximum length for Bluesky posts (their actual limit is ~3000 but we're being conservative)
+MAX_SUMMARY_LENGTH = 150       # Characters in summary (keep short)
+MAX_TOTAL_POST_LENGTH = 300    # Bluesky's maximum limit for post length
 PUBLISHED_FILE = ".github/bluesky-published.json"
 REPO_ROOT = os.getcwd()  # GitHub Actions runs in the repo root
 
@@ -62,7 +62,7 @@ def save_published_posts(published: Set[str]) -> None:
     with open(published_file_path, "w", encoding="utf-8") as f:
         json.dump({"published": sorted(normalized_paths)}, f, indent=2)
 
-def extract_summary(content: str, max_length: int = MAX_BLUESKY_POST_LENGTH) -> str:
+def extract_summary(content: str, max_length: int = MAX_SUMMARY_LENGTH) -> str:
     """Extract a summary from the post content."""
     # Convert markdown to plain text
     html = markdown.markdown(content)
@@ -93,31 +93,37 @@ def post_to_bluesky(
 ) -> bool:
     """Post to Bluesky with the blog post summary and link."""
     try:
-        # Create the post text
-        post_text = f"{title}\n\n{summary}\n\n{post_url}"
+        # Truncate the title if it's too long
+        if len(title) > 70:
+            title = title[:67] + "..."
+            
+        # Start with just the most critical components
+        post_text = f"{title}\n\n{post_url}"
         
-        # Add categories as hashtags if available
-        tags = " ".join([f"#{cat.replace(' ', '')}" for cat in categories]) if categories else ""
-        if tags:
-            post_text = f"{post_text}\n\n{tags}"
-            
-        # Ensure we're still within character limits
-        if len(post_text) > MAX_TOTAL_POST_LENGTH:
-            # Truncate the summary part to fit
-            current_length = len(post_text)
-            excess = current_length - MAX_TOTAL_POST_LENGTH + 3  # +3 for "..."
-            new_summary_length = max(10, len(summary) - excess)  # Ensure we have at least some summary
-            summary = summary[:new_summary_length] + "..."
-            
-            # Reconstruct the post
-            post_text = f"{title}\n\n{summary}\n\n{post_url}"
-            if tags:
-                post_text = f"{post_text}\n\n{tags}"
-                
-            # Double-check we're still within limits
-            if len(post_text) > MAX_TOTAL_POST_LENGTH:
-                # If still too long, drop the tags
+        # Calculate space available for summary
+        available_space = MAX_TOTAL_POST_LENGTH - len(post_text) - 10  # 10 chars buffer
+        
+        # Make sure we have some space for summary
+        if available_space > 20:
+            # If the summary fits in available space, add it
+            if len(summary) <= available_space:
                 post_text = f"{title}\n\n{summary}\n\n{post_url}"
+            else:
+                # Otherwise truncate summary
+                truncated_summary = summary[:available_space-3] + "..."
+                post_text = f"{title}\n\n{truncated_summary}\n\n{post_url}"
+        
+        # Add a single category hashtag if there's room
+        if categories and len(post_text) < MAX_TOTAL_POST_LENGTH - 15:
+            # Take just the first category
+            main_category = categories[0] if isinstance(categories, list) else categories
+            main_category = main_category.replace(' ', '')
+            post_text = f"{post_text}\n\n#{main_category}"
+            
+        # Final check to ensure we're within limits
+        if len(post_text) > MAX_TOTAL_POST_LENGTH:
+            # Emergency truncation - just title and URL
+            post_text = f"{title[:100]}\n\n{post_url}"
         
         # Create the post
         client.send_post(post_text)
