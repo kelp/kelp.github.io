@@ -7,7 +7,7 @@ import json
 import os
 import re
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Optional, Set
 
@@ -151,7 +151,7 @@ def post_to_bluesky(
                 "$type": "app.bsky.feed.post",
                 "text": post_text,
                 "facets": facets,
-                "createdAt": datetime.now().isoformat(),
+                "createdAt": datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z'),
             }
         })
         
