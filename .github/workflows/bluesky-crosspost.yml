@@ -13,7 +13,8 @@ permissions:
 jobs:
   crosspost:
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' && (github.repository == 'kelp/kelp.github.io' || github.repository_owner == 'kelp')
+    # Run for any push event - repository permissions will restrict to the correct repo
+    if: github.event_name == 'push'
     
     steps:
       - name: Checkout repository
@@ -27,11 +28,13 @@ jobs:
         with:
           python-version: '3.11'
           cache: 'pip'
+          cache-dependency-path: |
+            .github/requirements.txt
       
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install atproto PyYAML frontmatter markdown
+          pip install -r .github/requirements.txt
       
       - name: Find changed posts
         id: changed-posts
