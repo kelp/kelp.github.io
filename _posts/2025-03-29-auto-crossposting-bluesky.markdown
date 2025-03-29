@@ -127,7 +127,7 @@ updated tracking file.
 
 ### Python Dependencies
 
-```
+```text
 atproto>=0.0.31
 PyYAML>=6.0
 python-frontmatter>=1.0.0
@@ -232,7 +232,7 @@ def generate_summary_with_claude(title, content, max_length):
 
 Posts on Bluesky now look like:
 
-```
+```text
 A new post on my blog:
 
 Automated Cross-posting from Jekyll to Bluesky
